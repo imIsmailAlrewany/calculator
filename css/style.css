@@ -19,7 +19,6 @@ main {
     padding: 10px;
     border-radius: 10px;
     border: 1px solid #ccc;
-    overflow: hidden;
 }
 main header {
     padding: 0 5px;
@@ -34,6 +33,7 @@ main header i {
 .output {
     display: grid;
     margin-bottom: 20px;
+    overflow: hidden;
 }
 .output input {
     padding: 5px;
