@@ -19,6 +19,7 @@ main {
     padding: 10px;
     border-radius: 10px;
     border: 1px solid #ccc;
+    overflow: hidden;
 }
 main header {
     padding: 0 5px;
