@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --bg-white: #eee;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+main {
+    width: 300px;
+    background-color: var(--bg-white);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+main header {
+    padding: 0 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+main header i {
+    cursor: pointer;
+}
+.output {
+    display: grid;
+    margin-bottom: 20px;
+}
+.output input {
+    padding: 5px;
+    height: 75px;
+    font-size: 1.4rem;
+    color: #333;
+    outline: 0;
+    border: 0;
+    background-color: var(--bg-white);
+}
+.input {
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 5px;
+}
+.input button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.input button:active {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #999;
+}
+.input button:first-child {
+    grid-column: span 2;
+}
+.input button:nth-last-child(4) {
+    grid-row: span 2;
+    background-color: #1663ba;
+}
